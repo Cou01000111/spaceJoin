@@ -1,0 +1,45 @@
+textarea{
+    resize: none;
+}
+
+#input-text{
+    background-color: #1e87f0;
+    border-color: #FFF;
+}
+
+#output-text{
+    background-color: #222;
+}
+
+#copy-button{
+    background:#1e87f0;
+    color:#222;
+    border:none;
+    position:relative;
+    transition:800ms ease all;
+    outline:none;
+}
+#copy-button:hover{
+    background:#222;
+    color:#1e87f0;
+}
+#copy-button:before,#copy-button:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #1e87f0;
+    transition:400ms ease all;
+}
+#copy-button:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+}
+#copy-button:hover:before,#copy-button:hover:after{
+    width:100%;
+    transition:800ms ease all;
+}

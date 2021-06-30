@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Join</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.0/dist/css/uikit.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.0/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.0/dist/js/uikit-icons.min.js"></script>
+  </head>
+  <body class="uk-card uk-card-body uk-card-default">
+    <h1 class="uk-animation-fade">文字列の間に空白を入れるサイト</h1>
+    <p class="uk-animation-fade">このサイトでは入力した文字列に半角spaceを挟んで出力します。Muse scoreで歌詞を入力する際に便利です。</p>
+    <div class="input-area uk-card uk-card-body uk-card-default uk-height-medium uk-card-hover uk-margin uk-card-primary">
+      <div class="title uk-card-title">
+        <h2 class="uk-animation-fade">input</h2>
+      </div>
+      <textarea class="uk-width-1-1 uk-height-small uk-text-secondary" id="input-text"></textarea>
+    </div>
+    <div class="output-area uk-card uk-card-body uk-card-default uk-height-medium uk-card-hover uk-margin uk-card-secondary">
+      <div class="title uk-card-title uk-grid">
+        <h2 class="uk-animation-fade uk-width-5-6 uk-margin-bottom">output</h2><span class="uk-width-1-6 uk-margin-bottom uk-button" uk-icon="copy" id="copy-button"></span>
+      </div>
+      <textarea class="uk-width-1-1 uk-height-small uk-text-secondary" readonly id="output-text"></textarea>
+    </div>
+    <script src="./bundle.js"></script>
+  </body>
+</html>
