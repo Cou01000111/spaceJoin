@@ -5,17 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Space Join for MuseScore</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.0/dist/css/uikit.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/JNKKKK/MoreToggles.css/output/moretoggles.min.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.0/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.0/dist/js/uikit-icons.min.js"></script>
   </head>
   <body class="uk-card uk-card-body uk-card-default">
     <h1 class="uk-animation-fade">文字列の間に空白を入れるサイト</h1>
-    <p class="uk-animation-fade">このサイトでは入力した文字列に半角spaceを挟んで出力します。Muse scoreで歌詞を入力する際に便利です。</p>
+    <p class="uk-animation-fade"></p>このサイトでは入力した文字列に半角spaceを挟んで出力します。Muse scoreで歌詞を入力する際に便利です。<br>漢字を平仮名にする機能自体はこのサイトにはないのですが、こちらのブログHPツール様の<a href="https://www.webtoolss.com/hiragana.html">フリガナ⚙ツール</a>を使うことによってひらがなに変換することができます
     <div class="input-area uk-card uk-card-body uk-card-default uk-height-medium uk-card-hover uk-margin uk-card-primary">
-      <div class="title uk-card-title">
-        <h2 class="uk-animation-fade">input</h2>
+      <div class="title uk-card-title uk-grid">
+        <h2 class="uk-animation-fade uk-margin-bottom">input</h2>
+        <div id="options">
+          <div class="uk-grid" id="youon">
+            <div class="mt-transparent uk-margin-top">
+              <input class="toggle" type="checkbox" id="1">
+              <label class="toggle" for="1"></label>
+            </div>
+            <p class="uk-margin-top uk-text-small toggle-text"> 拗音を一文字としてカウントする</p>
+          </div>
+        </div>
       </div>
       <textarea class="uk-width-1-1 uk-height-small uk-text-secondary" id="input-text"></textarea>
     </div>

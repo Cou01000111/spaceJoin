@@ -43,3 +43,10 @@ textarea{
     width:100%;
     transition:800ms ease all;
 }
+.toggle{
+    font-size: 6px;
+}
+.toggle-text{
+    display: table-cell;
+    vertical-align:middle;
+}
