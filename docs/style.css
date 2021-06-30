@@ -50,3 +50,6 @@ textarea{
     display: table-cell;
     vertical-align:middle;
 }
+.toggle-switch{
+    display: inline;
+}
