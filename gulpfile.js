@@ -13,14 +13,14 @@ const webpackConfig = require("./webpack.config");
 gulp.task('webpack', (done) => {
     // ☆ webpackStreamの第2引数にwebpackを渡す☆
     webpackStream(webpackConfig, webpack)
-        .pipe(gulp.dest("dist"));
+        .pipe(gulp.dest("docs"));
     done();
 });
 
 //setting : paths
 var paths = {
     'pug': './src/pug/',
-    'html': './dist/',
+    'html': './docs/',
     'ts': './src/ts/',
     'js': './src/js/'
 }
@@ -55,7 +55,7 @@ gulp.task('browser-sync', (done) => {
             baseDir: paths.html
         }
     });
-    gulp.watch('./dist/*.js', gulp.task('reload'));
+    gulp.watch('./docs/*.js', gulp.task('reload'));
     gulp.watch(paths.html + "*.html", gulp.task('reload'));
     done();
 });
